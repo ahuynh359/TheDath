@@ -1,0 +1,165 @@
+:root {
+    --primary-color: #1C1C1C;
+    --secondary-color: #064628;
+    --text-color: #B99B2E;
+    --text-secondary-color: #2DCDDF;
+
+}
+
+@font-face {
+    font-family: 'Italiana';
+    src: url('fonts/Italiana-Regular.ttf') format('truetype');
+
+}
+
+body {
+    font-family: 'Italiana', sans-serif !important;
+    background-color: var(--primary-color) !important;
+
+}
+
+.nav-link.active {
+    color: var(--text-color) !important;
+}
+
+
+.navbar-brand img {
+    max-width: 80px;
+}
+
+.image-container {
+
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 100px;
+
+}
+
+.content p {
+    font-size: 20px;
+}
+
+.quote {
+    padding: 180px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.quote p {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+
+}
+
+.title {
+    font-size: 50px;
+    color: var(--text-color);
+}
+
+.form-label {
+    color: var(--text-color);
+}
+
+
+.service .card {
+    position: relative;
+    text-align: center;
+}
+
+.service .card .card-body {
+    color: white;
+    border: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-img-top {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.story .card-title {
+    font-size: 30px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+footer {
+
+    border-top: 1px dashed #fff;
+}
+
+
+
+.container {
+    width: 80%;
+    column-count: 4;
+    margin: 0 auto;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    margin: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        column-count: 3;
+    }
+
+
+}
+
+@media only screen and (max-width: 450px) {
+    .container {
+        column-count: 2;
+    }
+
+
+
+}
+
+.review-card {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.review-card .rating {
+    color: #f8ce0b;
+}
+
+.review-card .comment {
+    margin-top: 10px;
+}
+
+.review-card .customer-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+   
+}
+
+.item {
+    background-color: var(--primary-color) !important;
+  
+}
