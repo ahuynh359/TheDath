@@ -27,19 +27,13 @@ body {
     max-width: 80px;
 }
 
-.image-container {
-
-    position: relative;
-}
-
 .image-container img {
     width: 100%;
     height: 100%;
-
+    object-fit: cover;
 }
 
 .content {
-    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     margin-left: 100px;
@@ -48,7 +42,6 @@ body {
 
 .content p {
     font-size: 20px;
-
 }
 
 .quote {
@@ -70,10 +63,6 @@ body {
     color: var(--text-color);
 }
 
-.form-label {
-    color: var(--text-color);
-}
-
 
 .service .card {
     position: relative;
@@ -81,8 +70,7 @@ body {
 }
 
 .service .card .card-body {
-    color: white;
-    border: 5px;
+   
     position: absolute;
     top: 50%;
     left: 50%;
@@ -103,7 +91,6 @@ body {
 }
 
 footer {
-
     border-top: 1px dashed #fff;
 }
 
@@ -121,52 +108,13 @@ footer {
     margin: 1em;
 }
 
-
-.review-card {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.review-card .rating {
-    color: #f8ce0b;
-}
-
-.review-card .comment {
-    margin-top: 10px;
-}
-
-.review-card .customer-image {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-
-}
-
-.item {
-    background-color: var(--primary-color) !important;
-
-}
-
 @media all and (max-width: 540px) {
     .quote {
         padding: 50px;
 
     }
 
-    .image-container img {
-        width: 100vw;
-        /* Thu nhỏ hình ảnh xuống 50% chiều rộng của màn hình */
-        height: auto;
-        object-fit: cover;
-    }
-
     .content {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
         margin-left: 5px;
 
     }
@@ -195,8 +143,6 @@ footer {
 }
 
 @media only screen and (max-width: 280px) {
-
-
     .btn-book {
         width: 50%;
         height: 3em;
