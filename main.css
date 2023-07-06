@@ -35,6 +35,7 @@ body {
 .image-container img {
     width: 100%;
     height: 100%;
+
 }
 
 .content {
@@ -119,22 +120,6 @@ footer {
     margin: 1em;
 }
 
-@media only screen and (max-width: 768px) {
-    .container {
-        column-count: 3;
-    }
-
-
-}
-
-@media only screen and (max-width: 450px) {
-    .container {
-        column-count: 2;
-    }
-
-
-
-}
 
 .review-card {
     max-width: 400px;
@@ -156,10 +141,69 @@ footer {
     width: 100px;
     height: 100px;
     object-fit: contain;
-   
+
 }
 
 .item {
     background-color: var(--primary-color) !important;
-  
+
+}
+
+@media all and (max-width: 540px) {
+    .quote {
+        padding: 50px;
+
+    }
+
+    .image-container img {
+        width: 100vw;
+        /* Thu nhỏ hình ảnh xuống 50% chiều rộng của màn hình */
+        height: auto;
+        object-fit: cover;
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 5px;
+
+    }
+
+    .content p {
+        font-size: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        column-count: 3;
+    }
+
+
+}
+
+@media only screen and (max-width: 450px) {
+    .container {
+        column-count: 2;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 280px) {
+
+
+    .btn-book {
+        width: 50%;
+        height: 3em;
+        font-size: 10px !important;
+    }
+    
+}
+
+.scrollspy-example {
+    margin-top: 35px;
 }
