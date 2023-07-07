@@ -11,6 +11,9 @@
     src: url('fonts/Italiana-Regular.ttf') format('truetype');
 
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Italiana', sans-serif !important;
